@@ -14,7 +14,13 @@ For further reference, please consider the following sections:
     * Implementing UserDetails with GrandtedAuthorities, username(email), password.
     * Extracting Username from Bearer Token using 3rd Party Libs
     * generating signature key
+    * SecurityFilterChain with  .requestMatchers("/api/v1/auth/**")
+                                .permitAll()
+                                .anyRequest().authenticated()
+    * Check is token is valid< Expired?
+    * UserDetails and authenticationManager with new UsernamePasswordAuthenticationToken()
 
 * Controller
-  * 
+  * Register
+  * Login/Authenticate
 
